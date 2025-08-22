@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <marquee><img src="ảnh.jpg"> </marquee>
+    <h1>FORM Điền thông tin</h1>
+    <FORM>
+        <div>
+            <p><b>Họ và tên:</b></p>
+            <input type="text" name="hovaten" placeholder="Nhập họ và tên">
+        </div>
+        <div>
+        <p><b>Giới tính:</b></p>
+            <input type="radio" name="gioitinh" value="nam"> Nam <br>
+            <input type="radio" name="gioitinh" value="nu"> Nữ <br>
+            <!--Để người dùng chọn đáp án: radio-->
+        </div>
+        <div>
+            <p><b>Mẫ số sinh viên</b></p>
+            <input type="text" name="mssv" value="2321050133" readonly>
+            <!--Khóa thuộc tính không thay đổi được: readonly-->
+        </div>
+        <div>
+            <p><b>Giới thiệu bản thân</b></p>
+            <textarea name="gioithieu">Nhập vào giới thiệu ...</textarea>
+        </div>
+        <div>
+        <p><b>Sở thích:</b></p>
+            Game:<input type="checkbox" name="sothich" value="game"> <br>
+            Music:<input type="checkbox" name="sothich" value="music"> <br>
+            Sport:<input type="checkbox" name="sothich" value="sport"> <br>
+        </div>
+        <div>
+            <p><b>Email:</b></p>
+            <input type="email" name="email" placeholder="abcxyz@email.com">
+        </div>
+        <div>
+            <p><b>Số điện thoại:</b></p>
+            <input type="tel" 
+            name="sodienthoai" 
+            placeholder="0943212454" 
+            required pattern="[0]{1}[3,4,8,9]{1}[0-9]{8}">
+            <!--Ép người dùng phải điền thông tin vào ô: required-->
+        </div>
+        <div>
+             <p><b>Trình duyệt yêu thích:</b></p>
+             <select name="browsers">
+                <option value="Internet Explore"> Internet Explore</option>
+                <option value="Cốc cốc"> Cốc Cốc</option>
+                <option value="Chrome"> Chrome</option>
+                <option value="Fire Fox"> Fire Fox</option>
+             </select>
+        </div>
+        <div>0 <input type="range" value="50"/> 100</div>
+        <div>
+            <p><b>Tuổi:</b></p>
+            <input type="number" name="tuoi" step="2">
+        </div>
+        <div>
+            <p><b>Ngày tháng năm sinh:</b></p>
+            <input type="date" name="ngaysinh"> <br>
+        </div>
+        <div>
+            <p><b>Chọn màu sắc:</b></p>
+            <input type="coler" name="mausac" value="#ccddee">
+            <input type="coler" name="mausac" value="#ccaadd">
+            <input type="coler" name="mausac" value="#FF0000">
+            <input type="coler" name="mausac" value="#ccbbee">
+        </div>
+         <div>
+            <p><b>Mật khẩu:</b></p>
+            <input type="password" name="matkhau" placeholder="Nhập mật khẩu">
+        </div>
+ 
+ <div>
+
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </FORM>
+    <iframe width="560"
+     height="315" src="https://www.youtube.com/embed/h6db1gYLNlE?si=eI8omcQMpCVPagbH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+www.youtube.com
+<div>
+    <video controls width="500" height="500" src="nhạc.mp4">
+    <source src="nhạc.mp4">
+    </video>
+</div>
+<div>
+thẻ &lt
+</div>
