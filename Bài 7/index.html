@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        //Để viết chú thích js dùng cho kí tự//
+        document.writeln("Hello World <br>"); //Muốn xuống dòng trong js dùng br như thẻ bên//
+
+        let hoTen = "Nguyễn Đình Thái";
+        document.writeln(hoTen + "<br>"); //Phương pháp nối chuỗi dùng dấu +
+        //Khai báo hằng số
+        const pi =3.14;
+
+        let soThuNhat = 10;
+        let soThuHai = "10";
+        let ketQua = 0;
+        // +
+        ketQua = soThuNhat + soThuHai;
+        document.writeln(ketQua + "<br>");
+        document.writeln(soThuNhat == soThuHai); // 2 dấu = thì so sánh giá trị không quan tâm dữ liệu
+        document.writeln(soThuNhat === soThuHai); // 3 dấu = thì so sánh giá trị quan tâm dữ liệu
+        document.writeln(soThuNhat !== soThuHai); // 2 dấu = thì so sánh giá trị không quan tâm dữ liệu
+        document.writeln(!(soThuNhat !== soThuHai)); // 2 dấu = thì so sánh giá trị không quan tâm dữ liệu
+        ketQua = soThuNhat - soThuHai;
+        document.writeln(ketQua + "<br>");
+        //*
+        ketQua = soThuNhat * soThuHai;
+        document.writeln(ketQua + "<br>");
+        // /
+        ketQua = soThuNhat / soThuHai;
+        ketQua++;
+        document.writeln(ketQua + "<br>");
+        // %
+         ketQua = soThuNhat % soThuHai; // % chia Laays du
+        document.writeln(ketQua + "<br>");
+        soThuNhat += soThuHai;
+        //soThuNhat = soThuNhat + soThuHai;
+        document.writeln(soThuNhat + "<br>");
+        //  Biến thông tin sv
+        let thongTinSinhVien = {
+            hoTen: "Nguyễn Đình Thái",
+            tuoi: 20,
+            gioiTinh: true,
+            lop: "Tin kinh tế k68",
+
+    
+        };
+        let namnay = 2025;
+        let diaChiCuaToi = {
+            thanhPho: "Thái Bình",
+            quanHuyen: "Quỳnh Phụ",
+            xaPhuong: "Quỳnh Hoa",
+        };
+
+        thongTinSinhVien.diaChi = diaChiCuaToi;
+
+        document.writeln("xin Chào bạn " 
+            + thongTinSinhVien.hoTen 
+            + " Lớp " 
+            + thongTinSinhVien.lop ); 
+        document.writeln("<br>" + "Xin chào bạn "
+            + thongTinSinhVien.hoTen
+            + " nhà ở "
+            + thongTinSinhVien.diaChi.thanhPho
+            + " sinh năm " + (namnay - thongTinSinhVien.tuoi)
+        );
+         
+        let soThuBa = "10";
+        soThuBa= parseInt(soThuBa);
+        document.writeln("<br>" + typeof(soThuBa));
+        let soThuTu = "9.5";
+        soThuTu = parseInt(soThuTu);
+        document.writeln("<br>" + soThuTu);
+        let soThuNam = "9.5";
+        soThuTu = parseFloat(soThuNam);
+        document.writeln("<br>" + soThuTu);
+
+    </script>
+</body>
+</html>   
