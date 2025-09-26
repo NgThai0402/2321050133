@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        let thongTinKhachHang = {
+            hoTen: "Nguyễn Thái" ,
+            soDienthoai: "0966023631" ,
+            trangThaithanhvienthanthiet: true,
+            danhSachsanpham: {
+            sp1: {
+                maSanpham: "cf01",
+                tenSanpham: "Cà phê",
+                soLuong: 5,
+                Gia: 20000,
+            },
+            sp2: {
+                maSanpham: "mc01",
+                tenSanpham: "matCha",
+                soLuong: 3,
+                Gia: 40000,
+            },
+            sp3: {
+                maSanpham: "ts01",
+                tenSanpham: "Trà Sữa",
+                soLuong: 4,
+                Gia: 30000,
+            },
+        },
+        trangThaithanhtoan: true,
+        diaChi: "Liên Mạc",
+    };
+    thanhtien= thongTinKhachHang.danhSachsanpham.sp1.Gia *
+                thongTinKhachHang.danhSachsanpham.sp1.soLuong +
+                thongTinKhachHang.danhSachsanpham.sp2.Gia *
+                thongTinKhachHang.danhSachsanpham.sp2.soLuong +
+                thongTinKhachHang.danhSachsanpham.sp3.Gia *
+                thongTinKhachHang.danhSachsanpham.sp3.soLuong;
+    document.writeln("Tổng số tiền cần thanh toán là "+  thanhtien + "<br>");
+    //   STRING
+    let hoTen ="Nguyễn Thái";
+    document.writeln(hoTen.length + "<br>");
+
+    let myString = "hello Thái";    
+    document.writeln(myString[4] + "<br>");
+    document.writeln(myString.slice(1,4)+"<br>");
+    document.writeln(myString.replace("hello", "hi")+ "<br>");//Thế vào vị trí
+    document.writeln(myString.toUpperCase()+ "<br>");//Chuyển thành chữ hoa
+    document.writeln(myString.toLowerCase()+ "<br>");//Chuyển thành chữ thường
+    document.writeln(myString.indexOf("k")+ "<br>");//Kiểm tra có: vị trí, không: -1
+    document.writeln(myString.includes("e")+ "<br>");//Kiểm tra xem tồn tại hay không, có/true không/false
+    document.writeln(myString.split('e')+ "<br>");//Tách chuỗi thành một mảng
+    document.writeln(myString.startsWith("hello")+ "<br>");
+
+    //   NUMBER
+    var pi = 3.14159;
+    pi.toFixed(2);//Lấy 2 số sau dấu ,
+    document.writeln(pi.toFixed(2)+ "<br>");
+    document.writeln(isNaN("10")+ "<br>");//Đây không phải số
+    
+    let toDay= new Date();// Lấy theo giờ hiện tại thì để ()
+    //Lấy ra năm: getFullYear
+    //lấy ra tháng: getMonth
+    //Lấy ra ngày: getDate
+    //Lấy ra giờ: get Hourse
+    document.writeln(toDay);
+    </script>
+    
+</body>
+</html>
