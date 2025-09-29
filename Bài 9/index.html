@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // MẢNG
+        let arr = [1, 2, 3, 4, 'a', 'b', 'c', 2, 3];
+        let ten = 'ten';
+        let thongTin= {
+            ten: ten}
+        // Kiểm tra xem phải mảng hay không "Array.isArray"
+        document.writeln(Array.isArray(arr )+"<br>");
+
+        // Kiểm tra độ dài của mảng
+        document.writeln(arr.length+"<br>"); 
+       
+        // Lấy vị trí thứ 2 của mảng tính từ 0
+        document.writeln(arr[2]+"<br>"); 
+       
+        // Kiểm tra xem có trong mảng không và ở vị trí thứ mấy trong mảng
+        document.writeln(arr.indexOf(3)+"<br>");  
+
+        // Kiểm tra xem có trong mảng không và xuất hiện lần cuối ở vị trí thứ mấy trong mảng
+        document.writeln(arr.lastIndexOf(3)+"<br>")
+
+
+        let  a, b, c, d;
+        a = [1, 2, 3];
+        b = "JavaScript";
+        c = [42, "JS"];
+        d = a.concat(b, c); // concat nối mảng
+        //d = d.join(" "); // cách các phần tử mảng    
+        d.pop(); // Xoá phần tử cuối cùng trong mảng
+        d.push("Thái"); // Thêm phần tử vào cuối mảng
+        d.reverse(); // Đảo ngược mảng
+        d.shift();
+        document.writeln(d + "<br>");
+
+        let so = 10000000000000000001;
+        let soCuoi= parseInt(so[so.length - 1]);
+            if(so % 2 == 0){
+                document.writeln("số chẵn"+ "<br>");
+       }
+            else{
+                document.writeln("số lẻ"+ "<br>");
+       }
+
+       let now = new Date().getHours();
+        if( 5 <= now && now < 10){
+            document.writeln("Sáng");
+       }
+        else if (10 <= now && now < 13){
+            document.writeln("Trưa");
+       }
+        else if (13 <= now && now < 17){
+            document.writeln("Chiều");
+       }
+        else if (17 <= now && now < 22){
+            document.writeln("tối"+"<br>");
+       }
+        else{
+            document.writeln("Đêm");
+       }
+       
+       a = 7;
+       b = 9;
+       c = 100;
+       let tong= a*0.6 + b*0.3 + c*0.1;
+       document.writeln("Tổng Điểm "+ tong);
+       if (8 <=tong && tong <=10){
+        document.writeln("Điểm A");
+       }
+       else if (7<= tong && tong <8){
+        document.writeln("Điểm B");
+       }
+       else if (5<= tong && tong <7){
+        document.writeln("Điểm C");
+       }
+       else if (4<= tong && tong <5){
+        document.writeln("Điểm D");
+       }
+       else if(0<= tong && tong <4){
+        document.writeln("Điểm F");
+       }
+       else{
+        document.writeln("Lỗi");
+       }
+
+    </script>
+</body>
+</html>
