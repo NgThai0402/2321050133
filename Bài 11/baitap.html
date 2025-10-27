@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính điểm chữ</h1>
+    <h3>Biết tổng: A*0.6 + B*0.3 + C*0.1</h3>
+    <div>
+        <p>Nhập vào điểm A:</p>
+        <input type="number" id="A">
+    </div>
+    <div>
+        <p>Nhập vào điểm B:</p>
+        <input type="number" id="B">
+    </div>
+    <div>
+        <p>Nhập vào điểm C:</p>
+        <input type="number" id="C">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết quả: <input type="text" id="ketQua">
+    </div>
+    <script>
+        function tinhTong(){
+           let A = parseFloat(document.getElementById('A').value);
+           let B = parseFloat(document.getElementById('B').value);
+           let C = parseFloat(document.getElementById('C').value);
+           let canhBao =""
+           if (!A || A<0 || A>10 ){
+            canhBao += " vui lòng nhập lại điểm A ";
+           }
+           if (!B || B<0 || B>10){
+            canhBao += " vui lòng nhập lại điểm B ";
+           }
+           if (!C || C<0 || C>10){
+            canhBao += " vui lòng nhập lại điểm C ";
+           }
+           if (canhBao){
+            alert(canhBao);
+           }
+           let tong = parseFloat(A*0.6 + B*0.3 + C*0.1)
+           if (tong >8){
+            document.getElementById('ketQua').value = "A";
+           }
+           else if (tong <8 && tong >= 7){
+            document.getElementById('ketQua').value = "B";
+           }
+           else if (5<= tong && tong <7){
+            document.getElementById('ketQua').value = "C";
+           }
+           else if (4<= tong && tong <5){
+            document.getElementById('ketQua').value = "D";
+           }
+           else
+            document.getElementById('ketQua').value = "F";
+           }
+          
+    </script>
+</body>
+</html>
