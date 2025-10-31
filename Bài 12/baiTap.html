@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 5%;
+}
+</style>
+<body>
+    <div class="container">
+    <h1>Tính chỉ số BMI</h1>
+    <p>Nhập vào chiều cao:</p>
+    <div>
+        <input type="number" id="A">
+    </div>
+    <div>
+        <p>Nhập vào cân nặng:</p>
+        <input type="number" id="B">
+    </div>
+    <div>
+        <button onclick="tinhBMI()">Tính BMI</button>
+    </div>
+     <div>
+        Kết quả: <input type="number" id="ketQua">
+    </div>
+    <div>
+        <img class="anh" src="bthuong.jpg">
+    </div>
+    </div>
+    <script>
+        function tinhBMI(){
+            let chieuCao = parseFloat(document.getElementById('A').value);
+            let canNang = parseFloat(document.getElementById('B').value);
+            let canhBao =""
+           if (!chieuCao){
+            canhBao += " vui lòng nhập chiều cao";
+           }
+           if (!canNang){
+            canhBao += " vui lòng nhập cân nặng ";
+           }
+           if (canhBao){
+            alert(canhBao);
+           }
+            let BMI= canNang/(chieuCao*chieuCao);
+            let lamTron = BMI.toFixed(2);
+            document.getElementById('ketQua').value = lamTron;
+        if (BMI <18.5){
+            document.getElementsByClassName("anh")[0].src="thieuc.jpg";
+        }
+        else if (BMI >=18.5 && BMI < 25){
+            document.getElementsByClassName("anh")[0].src="bthuong.jpg";
+        }
+        else if (BMI <30 && BMI >= 25){
+            document.getElementsByClassName("anh")[0].src="thuac.jpg";
+        }
+        else if (BMI <39.9 && BMI >=30){
+            document.getElementsByClassName("anh")[0].src="bp1.jpg";
+        }
+        else{
+            document.getElementsByClassName("anh")[0].src="bp2.jpg";
+        }
+    }
+    </script>
+</body>
+</html>
