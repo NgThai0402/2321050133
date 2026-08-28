@@ -1,0 +1,12 @@
+h3{
+    color: green;
+}
+#khoa{
+    color:pink;
+}
+.khoa{
+    background-color: black;
+}
+h3.khoa{
+    background-color: yellow;
+}
