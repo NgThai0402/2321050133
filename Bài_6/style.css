@@ -1,0 +1,89 @@
+header{
+    background-color: #2fa4e7;
+    padding: 0px 6px;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+}
+header div{
+    display: flex;
+    align-items: center;
+    margin: 0px px;
+}
+header div a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 6px;
+    font-size: 16px;
+    font-weight: 400;
+}
+left{
+    position: fixed;
+    left: 0;
+    width: 19%;
+    height: 93%;
+    font-family: "roboto", sans-serif;
+    border-right: 2px solid #198cf0;
+
+}
+
+.login{
+    padding: 4px 15px;
+    margin: 0px 15px;
+}
+.login div{
+    margin: 6px 0px
+}
+left a{
+    color: #00000080;
+    font-size: 16px;
+}    
+
+div input{
+    background-color: #e8f0fe;
+    padding: 6px 12px;
+    border-radius: 5px;
+    width:90%;
+    border-color:#e8f0fe
+}
+div i{
+    color:#2fa4e7;
+    padding:4px 0px;
+    font-size: 16px;
+}
+div button{
+    background-color: #2fa4e7;
+    boder-color: #2fa4e7;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+.menu a{
+    text-decoration: none;
+    color:#2fa4e7;
+
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu li{
+    padding:10px 0px;
+    margin: 0px -20px;
+}
+right{
+    position: fixed;
+    right: 0;
+    width: 80%;
+    height: 93%;
+    font-family: "roboto", sans-serif;
+}
+.tintuc{
+    border: 1px solid;
+}
+
+.tieu_de{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
