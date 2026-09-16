@@ -77,13 +77,42 @@ right{
     width: 80%;
     height: 93%;
     font-family: "roboto", sans-serif;
+    overflow-y: auto;
 }
 .tintuc{
-    border: 1px solid;
+    border: 1.5px solid;
+    border-color: #2fa4e7;
+    border-radius: 8px;
+    margin: 10px 10px;
 }
 
 .tieu_de{
     display: flex;
     justify-content: space-between;
-    margin: 10px 10px;
+    margin: 20px 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2fa4e7;
+}
+.noidung{
+    display: flex;
+    gap: 10px;
+    padding: 0px 16px;
+    margin: 10px 15px;
+
+}
+.noidung div{
+    margin: 0px 100px 0px 0px;
+}
+.noidung img{
+    border-radius: 8px;
+}
+.noidung1{
+    display:block;
+    margin: 0px 15px;
+    padding: 0px 16px;
+    border-left: 1px solid gray;
+}
+.noidung2{
+    display:flex;
+    justify-content: space-around;
 }
