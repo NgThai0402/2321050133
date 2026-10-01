@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //in ra màn hình
+        document.writeln("Hello World <br>");
+
+        //khai báo biến
+        var name="Nguyễn Thái";
+        name ="Thái <br>";
+        document.writeln(name);
+        var tuoi="21 <br>";
+        document.writeln(tuoi);
+        var sTn=5;
+        var sTh=6;
+        var kq=0;
+        kq=sTn+sTh
+        document.writeln("<br>" + kq);
+        kq=sTn-sTh;
+        document.writeln("<br>" + kq);
+        kq=sTn*sTh;
+        document.writeln("<br>" + kq);
+        kq=sTn/sTh;
+        document.writeln("<br>" +kq);
+        var ho="Nguyễn";
+        document.writeln("<br>"+ ho + " "+name);
+        document.writeln("<br>");
+        document.writeln(ho.length);
+        document.writeln("<br>");
+
+        var hoVaTen="Nguyễn Đình Thái <br>"
+        document.writeln("<br>"+ hoVaTen);
+        document.writeln(hoVaTen.indexOf("T"));
+        document.writeln("<br>");
+        document.writeln(hoVaTen.includes("g"));
+        document.writeln(hoVaTen.startsWith("Nguyễn"));
+        document.writeln(hoVaTen.replace("Nguyễn","Phạm"));
+        document.writeln(hoVaTen.toUpperCase());
+        document.writeln(hoVaTen.toLowerCase());
+        document.writeln("<br>");
+
+        //date
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.writeln(homNay);
+
+        var ngay = new Date("2005/7/4");
+        document.writeln("<br>");
+        document.write(ngay);
+
+        var namNay = homNay.getFullYear();
+        document.writeln("<br>");
+        document.write(namNay);
+
+        var thang = homNay.getMonth() +1;
+        document.writeln("<br>");
+        document.write(thang);
+
+        var thu = homNay.getDay() +1;
+        document.writeln("<br>");
+        document.write(thu);
+
+        var ngayHomNay = homNay.getDate();
+
+        document.writeln("<br>");
+        document.write("hôm nay là thứ " + thu + " ngày " + ngayHomNay + " tháng " + thang + " năm " + namNay);
+    
+        //Mảng
+        var mangSo = [1,2,3,4,5];
+        document.writeln("<br>");
+        document.write(mangSo[2]);
+        document.writeln("<br>");
+        document.write(mangSo.length);
+
+        var mangTen = ["Thái","Đức","Trường"];
+        document.writeln("<br>");
+        document.write(mangTen);
+
+        var mang = [1, 2, 3, 4, 5, "Thái","Đức","Trường"];
+        document.writeln("<br>");
+        document.write(mang[5]);
+        var d = mang.concat(mangTen,mangSo);
+        document.writeln("<br>");
+        document.write(d);
+
+        var danhSachSinhVien = [
+            {
+                ten: "Nguyen Dinh Thai",
+                namSinh: 2005,
+                queQuan: {
+                xa: "Tân Lập",
+                tinh: "Thái Nguyên"
+                }
+            },
+            {
+                ten: "Phạm Đức",
+                namSinh: 2005,
+                queQuan: {
+                xa: "Hợp Tiến",
+                tinh: "Hải Phòng"
+                }
+            }
+        ];
+        document.writeln("<br>");
+        document.write(danhSachSinhVien[1].ten);
+
+        //=== so sánh cả giá trị và kiểu giá trị
+        var so1 = 5;
+        var so2 = "10";
+        document.writeln("<br>");
+        document.writeln(so1 !== so2);
+        document.writeln("<br>");
+
+        //if else
+
+        if(thu > 6){
+            document.writeln("Cuối tuần");
+        }
+        else{
+            document.writeln("Đi học");
+        }
+        document.writeln("<br>");
+
+        var so=5;
+        kq = so%2;
+        if(kq==0){
+            document.writeln("so chan");
+        }
+        else{
+            document.writeln("so le");
+        }
+    </script>
+</body>
+</html>
