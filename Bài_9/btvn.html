@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhDiem(a,b,c){
+            var tong= a*0.6 + b*0.3 + c*0.1;
+            document.writeln("Tổng Điểm "+ tong);
+            if (8 <=tong && tong <=10){
+                document.writeln("Điểm A");
+            }
+            else if (7<= tong && tong <8){
+                document.writeln("Điểm B");
+            }
+            else if (5<= tong && tong <7){
+                document.writeln("Điểm C");
+            }
+            else if (4<= tong && tong <5){
+                document.writeln("Điểm D");
+            }
+            else if(0<= tong && tong <4){
+                document.writeln("Điểm F");
+            }
+            else{
+                document.writeln("Lỗi");
+            }
+        }
+    </script>
+
+    <div>
+        Nhập điểm A: <input type="number" id="diemA"><br>
+        Nhập điểm B: <input type="number" id="diemB"><br>
+        Nhập điểm C: <input type="number" id="diemC"><br>
+        <button onclick="tinhDiem(parseFloat(document.getElementById('diemA').value), parseFloat(document.getElementById('diemB').value), parseFloat(document.getElementById('diemC').value))">Tính Điểm</button>
+    </div>
+</body>
+</html>
