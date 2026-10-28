@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .video {
+        margin: 0px auto;
+      }
+
+      h3{
+        text-align: center;
+        font-size: 30px;
+      }
+      .danhsach {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+
+        width: 300px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video">
+    <!--Manf xem-->
+    <iframe
+      width="100%"
+      height="450"
+      src="https://www.youtube.com/embed/INJuqE_34eQ?si=cf1OQJUfhxW5bdRW"
+    ></iframe>
+    <h3>6 Phải 3 đừng</h3>
+    </div>
+    
+    <div class="danhsach">
+      <div onclick="chonvideo(1)" class="anh">
+        <img src="/Ảnh/netflix/7thithe.jpg" alt="" />
+        <h3>7thithe</h3>
+      </div>
+      <div onclick="chonvideo(2)" class="anh">
+        <img src="/Ảnh/netflix/cam.jpg" alt="" />
+        <h3>Cam</h3>
+      </div>
+      <div onclick="chonvideo(3)" class="anh">
+        <img src="/Ảnh/netflix/keanhon.jpg" alt="" />
+        <h3>Ke An Hon</h3>
+      </div>
+      <div onclick="chonvideo(4)" class="anh">
+        <img src="/Ảnh/netflix/kong.jpg" alt="" />
+        <h3>Kong</h3>
+      </div>
+    </div>
+  </body>
+  <script>
+    var danhsachvid = [
+      {
+        id: 1,
+        ten: "7 thi thể",
+        link: "https://www.youtube.com/embed/IyvKUjStYfc?si=CSDk_5dJNmzjmZaQ"
+      },
+      {
+        id: 2,
+        ten: "Cam",
+        link: "https://www.youtube.com/embed/_8qUFEmPQbc?si=ZdiZrZLBjTXgT54s"
+      },
+      {
+        id: 3,
+        ten: "Ke An Hon",
+        link: "https://www.youtube.com/embed/-fpi7elVQ40?si=FVEYOdigyduZi27d"
+      },
+      {
+        id: 4,
+        ten: "Kong",
+        link: "https://www.youtube.com/embed/YT7XStPczfM?si=pz3EjMQBNEaluuGz"
+      }
+    ]
+    function chonvideo(id) {
+     for (let i = 0 ; i < danhsachvid.length; i++) {
+        if (danhsachvid[i].id == id) {
+          document.getElementsByTagName("iframe")[0].src = danhsachvid[i].link;
+          document.getElementsByTagName("h3")[0].innerHTML = danhsachvid[i].ten;
+        }
+      }
+    }
+  </script>
+</html>

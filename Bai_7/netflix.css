@@ -1,0 +1,202 @@
+   *{
+      box-sizing: border-box;
+      color: #dbdbdd;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #141414;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 72px;
+      padding: 10px 4%;
+      background: #080808;
+    }
+
+    header > div:first-child {
+      min-width: 0;
+    }
+
+    header ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    header li {
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    header img {
+      display: block;
+      width: 70px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    header .dang-chon a {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .chuc-nang {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-shrink: 0;
+    }
+
+    .tim-kiem {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .chuc-nang .logo img {
+      width: 35px;
+      height: 35px;
+    }
+
+    main {
+      width: 100%;
+      margin: 0 auto;
+      background: #141414;
+    }
+
+    .banner {
+      margin: 0px 70px;
+    }
+
+    .banner-img {
+      position: relative;
+      width: 100%;
+      height: min(82vh, 700px);
+      min-height: 500px;
+      overflow: hidden;
+    }
+
+    .danh-sach-the-loai {
+      position: relative;
+      z-index: 3;
+      margin-top: -15px;
+      padding: 0 4% 35px;
+    }
+
+    .co-the-ban-chua-xem {
+      margin: 22px 0 30px;
+    }
+
+    .co-the-ban-chua-xem > p {
+      margin: 0 0 12px;
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .phim,
+    .nhan_vat {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 4px 2px 14px;
+      scrollbar-color: #555 #222;
+      scrollbar-width: thin;
+    }
+
+    .phim div{
+      flex: 0 0 16%;
+      min-width: 135px;
+    }
+    .phim img {
+      display: block;
+      width: 100%;
+      height: 145px;
+      border-radius: 4px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .phim{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nhan_vat {
+      justify-content:space-between;
+    }
+
+    .nhan_vat a {
+      flex: 0 0 120px;
+    }
+
+    .nhan_vat img {
+      display: block;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .phim img:hover,
+    .nhan_vat img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+      width: min(100% - 8%, 1000px);
+      margin: 20px auto 100px;
+      padding-top: 25px;
+      border-top: 1px solid #333;
+    }
+
+    .noi_dung {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 13px;
+    }
+
+    .noi_dung a {
+      color: #999;
+    }
+
+    .noi_dung a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }

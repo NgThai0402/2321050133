@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Trang chủ</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  >
+  <link
+    rel="stylesheet"
+    href="netflix.css"
+  >
+</head>
+
+<body>
+  <header>
+    <div>
+      <ul>
+        <li>
+          <a href="#" aria-label="Netflix - Trang chủ">
+            <img src="/Ảnh/netflix/logo.png" alt="Netflix">
+          </a>
+        </li>
+        <li class="muc dang-chon"><a href="#">Trang chủ</a></li>
+        <li class="muc"><a href="#">Nhân vật</a></li>
+        <li class="muc"><a href="#">Series</a></li>
+        <li class="muc"><a href="#">Phim</a></li>
+        <li class="muc"><a href="#">Mới & phổ biến</a></li>
+        <li class="muc"><a href="#">Netflix của tôi</a></li>
+        <li class="muc"><a href="#">Duyệt tìm theo ngôn ngữ</a></li>
+      </ul>
+    </div>
+
+    <div class="chuc-nang">
+      <div class="tim-kiem" aria-label="Tìm kiếm">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <div class="logo">
+        <img src="/Ảnh/netflix/treem.png" alt="Hồ sơ trẻ em">
+      </div>
+    </div>
+  </header>
+
+  <main>
+      <div class="banner">
+        <img
+          onclick="PhatTrailer()"
+          class="banner-img"
+          id="bannerAnh"
+          src="/Ảnh/netflix/kungfu.jpg"
+          alt=""
+        />
+
+        <iframe
+          id="trailer"
+          style="display: none"
+          class="banner-img"
+          src="https://www.youtube.com/embed/UZUwhZYs2yg?si=3xivSyyR3Jxqh26r"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="danh-sach-the-loai">
+        <div class="co-the-ban-chua-xem">
+          <p>Có thể bạn chưa xem</p>
+          <div class="phim">
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/Ảnh/netflix/7thithe.jpg"
+                data-trailer="https://www.youtube.com/embed/JOGp2c7-cKc?si=NQ-0v-xgPFqUXC4V"
+                alt="phim1"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/Ảnh/netflix/cam.jpg"
+                data-trailer="https://www.youtube.com/embed/04FcbCFmisI?si=SoyX94kS4jFl3eOk"
+                alt="phim2"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/Ảnh/netflix/chichiemem.jpg"
+                data-trailer="https://www.youtube.com/embed/3JTVQTk36R8?si=Bdzcnwib6uurYqxP"
+                alt="phim3"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/Ảnh/netflix/keanhon.jpg"
+                data-trailer="https://www.youtube.com/embed/glgmAwRDP8s?si=jtwajWZwFvv30S7j"
+                alt="phim4"
+              />
+            </div>
+            <div>
+              <img
+                onclick="doiBanner(this)"
+                id="trailer-phim"
+                src="/Ảnh/netflix/kong.jpg"
+                data-trailer="https://www.youtube.com/embed/2rShZls4Ffw?si=L_fBjB6P2zJ8eW-X"
+                alt="phim5"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="co-the-ban-chua-xem">
+          <p>Phim hài hước</p>
+          <div class="phim">
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/mai.jpg"
+              data-trailer="https://www.youtube.com/embed/6vWg_-ot_Q8?si=VwFUeGW19d1SXKQ6"
+              alt="phim8"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/titanic.jpg"
+              data-trailer="https://www.youtube.com/embed/9CSRAY6YYdU?si=VNi5TvgF-cCTl6UO"
+              alt="phim9"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/nguoinhen.jpg"
+              data-trailer="https://www.youtube.com/embed/cheTKN92K0o?si=nrTaLNFxPJnnlOo1"
+              alt="phim10"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/muado.jpg"
+              data-trailer="https://www.youtube.com/embed/7Wy3P1Vva4Q?si=_cKO0Q9U8u0ajj5F"
+              alt="phim11"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/phim8.jpg"
+              data-trailer="https://www.youtube.com/embed/Pjul1QfzBIM?si=9diRpwhW8TPCikIj"
+              alt="phim12"
+            />
+          </div>
+        </div>
+        <div class="co-the-ban-chua-xem">
+          <p>Hoạt hình</p>
+          <div class="phim">
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/phim6.jpg"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim13"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/phim9.jpg"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim14"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/phim5.jpg"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim15"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/phim4.jpg"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim16"
+            />
+
+            <img
+              onclick="doiBanner(this)"
+              class="trailer-phim"
+              src="/Ảnh/netflix/phim1.jpg"
+              data-trailer="https://www.youtube.com/embed/NRc-ze7Wrxw?si=aCfW7qmtCNiGRAZu"
+              alt="phim17"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section class="co-the-ban-chua-xem" id="nhan-vat">
+        <p>Nhân vật</p>
+        <div class="nhan_vat">
+          <a href="#"><img src="/Ảnh/netflix/nv1.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/nv2.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/nv3.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/nv4.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/nv5.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/nv6.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/mv7.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/nv8.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/nv9.jpg" alt=""></a>
+          <a href="#"><img src="/Ảnh/netflix/phim4.jpg" alt=""></a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="noi_dung">
+      <a href="#">Mô tả âm thanh</a>
+      <a href="#">Việc làm</a>
+      <a href="#">Tùy chọn cookie</a>
+    </div>
+
+    <div class="noi_dung">
+      <a href="#">Thẻ tặng quà</a>
+      <a href="#">Điều khoản sử dụng</a>
+      <a href="#">Thông tin doanh nghiệp</a>
+    </div>
+
+    <div class="noi_dung">
+      <a href="#">Trung tâm đa phương tiện</a>
+      <a href="#">Quyền riêng tư</a>
+      <a href="#">Liên hệ với chúng tôi</a>
+    </div>
+
+    <div class="noi_dung">
+      <a href="#">Quan hệ với nhà đầu tư</a>
+      <a href="#">Thông báo pháp lý</a>
+    </div>
+  </footer>
+
+  <script>
+    const bannerAnh = document.getElementById("bannerAnh");
+const trailer = document.getElementById("trailer");
+
+let Trailerhientai = "";
+
+trailer.style.display = "none";
+
+function doiBanner(anhphim) {
+  bannerAnh.src = anhphim.src;
+  trailerhientai = anhphim.getAttribute("data-trailer");
+  bannerAnh.style.display = "block";
+  trailer.style.display = "none";
+  trailer.src = "";
+}
+function PhatTrailer() {
+  if (trailerhientai === "") {
+    alert("Hãy chọn phim bạn muốn xem trailer!");
+    return;
+  }
+  bannerAnh.style.display = "none";
+  trailer.style.display = "block";
+  const urlTrailer = new URL(trailerhientai);
+  urlTrailer.searchParams.set("autoplay", "1");
+  trailer.src = urlTrailer.toString();
+}
+  </script>
